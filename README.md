@@ -4,9 +4,9 @@ Regex, short for regular expression, is a powerful tool for creating patterns th
 
 ## Summary
 
-The Featured Regex for this Tutorial:
+The Featured Regex for this Tutorial to verify that user input is a valid email address:
 
-/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ## Table of Contents
 
@@ -24,7 +24,8 @@ The Featured Regex for this Tutorial:
 Regex components are fundamental building blocks that make up regular expressions, allowing users to create patterns for matching, locating, and manipulating text. Here are some common regex components:
 
 ### Anchors
-
+-`^` (caret): The first thing seen in the matching email snippet above is ^. This means beginning so it means email should start with `([a-z0-9_\.-]+)` expression.</br>
+-`$` (dollar): The last thing seen is $. It means end of the email address. So the email should end with `([a-z\.]{2,6})`
 ### Quantifiers
 
 ### Grouping Constructs
@@ -34,7 +35,7 @@ Regex components are fundamental building blocks that make up regular expression
 ### Character Classes
 
 ### The OR Operator
-
+The `|` (pipe) in this expression is an OR operator. The regex engine will try to match the pattern on the left side of the |, and if that doesn't work it will try to match the pattern on the right side.
 ### Flags
 
 ### Character Escapes
