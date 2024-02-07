@@ -4,7 +4,9 @@ Regex, short for regular expression, is a powerful tool for creating patterns th
 
 ## Summary
 
+The Featured Regex for this Tutorial:
 
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -19,9 +21,7 @@ Regex, short for regular expression, is a powerful tool for creating patterns th
 
 ## Regex Components
 
-The Featured Regex for this Tutorial:
-
-/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+Regex components are fundamental building blocks that make up regular expressions, allowing users to create patterns for matching, locating, and manipulating text. Here are some common regex components:
 
 ### Anchors
 
