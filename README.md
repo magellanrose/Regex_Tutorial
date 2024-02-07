@@ -41,4 +41,8 @@ The Featured Regex for this Tutorial:
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Nicholas Vacca
+
+Deployed Github-Gist Link:
+
+Github Repository: https://github.com/magellanrose/Regex_Tutorial 
