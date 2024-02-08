@@ -52,6 +52,6 @@ There are a few character escapes in this regex expression `/^([a-z0-9_\.-]+)@([
 
 Nicholas Vacca
 
-Deployed Github-Gist Link:
+Deployed Github-Gist Link: https://gist.github.com/magellanrose/110d49ff02d928cecf1ad31e025fc445
 
 Github Repository: https://github.com/magellanrose/Regex_Tutorial 
