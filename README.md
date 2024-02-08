@@ -31,13 +31,14 @@ Regex components are fundamental building blocks that make up regular expression
 ### Grouping Constructs
 
 ### Bracket Expressions
+Bracket expressions, also known as character classes, are used to define sets of characters that can match at a particular position in the string. In most regex expressions, you define a character class using square brackets `[]`. `[a-z0-9_\.-]+` This character class is used ti define valid characters for the username part of the email address. `[\da-z\.-]+` This character cladd defines valid characters for the domain part of the email. The `+` outside the character class means that one or more of these characters should be present. `[a-z\.]{2,6}` This character class is used for the top-level domain part of the email address. The `{2,6}` specifies that there should be between 2 and 6 characters in this set.
 
 ### Character Classes
 
 ### The OR Operator
-The `|` (pipe) in this expression is an OR operator. The regex engine will try to match the pattern on the left side of the `|`, and if that doesn't work it will try to match the pattern on the right side. For example if `abc | dfg`, both `abc` and `dfg` match
+The `|` (pipe) in this expression is an OR operator. The regex engine will try to match the pattern on the left side of the `|`, and if that doesn't work it will try to match the pattern on the right side. For example if `abc | dfg`, both `abc` and `dfg` match.
 ### Flags
-A flag in regex is a modifier or option specified after the closing delimiter (typically a forward slash `/`). It influences the behavior of the regular expression pattern. Flags can be used to control aspects such as case sensitivity, global matching, and multiline matching. In this example `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` the flags `/` are applied in a defualt mannder, which typically means it is case-sensitive. No additional flags like `/g` for global matching or `/i` for case-insensitivity are present in this regex.
+A flag in regex is a modifier or option specified after the closing delimiter (typically a forward slash `/`). It influences the behavior of the regular expression pattern. Flags can be used to control aspects such as case sensitivity, global matching, and multiline matching. In this example `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` the flags `/` are applied in a defualt manner, which typically means it is case-sensitive. No additional flags like `/g` for global matching or `/i` for case-insensitivity are present in this regex.
 
 ### Character Escapes
 
