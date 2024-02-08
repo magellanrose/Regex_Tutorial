@@ -26,7 +26,9 @@ Regex components are fundamental building blocks that make up regular expression
 ### Anchors
 -`^` (caret): The first thing seen in the matching email snippet above is ^. This means beginning so it means email should start with `([a-z0-9_\.-]+)` expression.</br>
 -`$` (dollar): The last thing seen is $. It means end of the email address. So the email should end with `([a-z\.]{2,6})`
+
 ### Quantifiers
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` In this regex expression there is the `+` which applies to the username part of the email address. The `+` can be used in the `()` like `([a-z0-9_\.-]+)` this example which applies to the domain part of the email address. `{2,6}` applies to the top level domain part of the email address. These quantifiers help define the structure of the email address in terms of the number of allowed occurrences for specific character sets. The `+` quantifier allows for flexibility in the lengths of the username and domain parts, while `{2,6}` restricts the TLD to between 2 and 6 characters.
 
 ### Grouping Constructs
 Grouping constructs in regular expressions enable the consolidation of multiple characters into a cohesive unit, establishing subexpressions within the overarching pattern. These constructs fulfill diverse roles, such as facilitating the application of quantifiers to a character group, capturing specific segments of the matched text for future reference, and specifying alternatives within a defined scope. The primary and widely used grouping construct is represented by parentheses (). So in the example provided `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` we have `([a-z0-9_\.-]+)`, `([\da-z\.-]+)`, `([a-z\.]{2,6})` all seperated by grouping constructs.
