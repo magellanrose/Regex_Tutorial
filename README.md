@@ -35,7 +35,7 @@ Regex components are fundamental building blocks that make up regular expression
 ### Character Classes
 
 ### The OR Operator
-The `|` (pipe) in this expression is an OR operator. The regex engine will try to match the pattern on the left side of the |, and if that doesn't work it will try to match the pattern on the right side.
+The `|` (pipe) in this expression is an OR operator. The regex engine will try to match the pattern on the left side of the `|`, and if that doesn't work it will try to match the pattern on the right side. For example if `abc | dfg`, both `abc` and `dfg` match
 ### Flags
 
 ### Character Escapes
