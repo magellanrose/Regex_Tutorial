@@ -37,6 +37,7 @@ Regex components are fundamental building blocks that make up regular expression
 ### The OR Operator
 The `|` (pipe) in this expression is an OR operator. The regex engine will try to match the pattern on the left side of the `|`, and if that doesn't work it will try to match the pattern on the right side. For example if `abc | dfg`, both `abc` and `dfg` match
 ### Flags
+A flag in regex is a modifier or option specified after the closing delimiter (typically a forward slash `/`). It influences the behavior of the regular expression pattern. Flags can be used to control aspects such as case sensitivity, global matching, and multiline matching. In this example `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` the flags `/` are applied in a defualt mannder, which typically means it is case-sensitive. No additional flags like `/g` for global matching or `/i` for case-insensitivity are present in this regex.
 
 ### Character Escapes
 
